@@ -26,7 +26,11 @@ I installed Perl on my machine and Ack
 #### CoffeeScript
 I have nodejs on my machine with npm (node package manager) and just installed CoffeeScript package
 
-**Sparkup**
+Grab latest nodejs at http://nodejs.org/ and it bundles the _npm_ with Windows installer
+
+    npm install coffee-script
+
+#### Sparkup
 
 Couldn't get pathogen to detect and install plugin. I just had to do the manual way of copying _html_ folder to the _ftplugin_ folder.
 
