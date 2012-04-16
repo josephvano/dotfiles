@@ -1,3 +1,30 @@
 [submodule "vim/.vim/bundle/nerdcommenter"]
 	path = vim/.vim/bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter
+[submodule "vim/.vim/bundle/FuzzyFinder"]
+	path = vim/.vim/bundle/FuzzyFinder
+	url = https://github.com/vim-scripts/FuzzyFinder.git
+[submodule "vim/.vim/bundle/L9"]
+	path = vim/.vim/bundle/L9
+	url = https://github.com/vim-scripts/L9.git
+[submodule "vim/.vim/bundle/ack"]
+	path = vim/.vim/bundle/ack
+	url = https://github.com/mileszs/ack.vim.git
+[submodule "vim/.vim/bundle/nerdtree"]
+	path = vim/.vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "vim/.vim/bundle/sparkup"]
+	path = vim/.vim/bundle/sparkup
+	url = https://github.com/rstacruz/sparkup.git
+[submodule "vim/.vim/bundle/coffee-script"]
+	path = vim/.vim/bundle/coffee-script
+	url = https://github.com/kchmck/vim-coffee-script.git
+[submodule "vim/.vim/bundle/fugitive"]
+	path = vim/.vim/bundle/fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "vim/.vim/bundle/ragtag"]
+	path = vim/.vim/bundle/ragtag
+	url = https://github.com/tpope/vim-ragtag.git
+[submodule "vim/.vim/bundle/surround"]
+	path = vim/.vim/bundle/surround
+	url = https://github.com/tpope/vim-surround.git
