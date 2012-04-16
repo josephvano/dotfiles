@@ -12,10 +12,10 @@ filetype plugin on
 set nocompatible
 set ignorecase
 
-set tabstop=4
-set softtabstop=4
+set tabstop=2
+set softtabstop=2
 set smarttab
-set shiftwidth=4
+set shiftwidth=2
 set autoindent
 set expandtab
 
