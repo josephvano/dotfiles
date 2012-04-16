@@ -4,6 +4,7 @@ filetype off
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+filetype on
 filetype indent on
 filetype plugin indent on
 filetype plugin on
@@ -61,5 +62,13 @@ cd c:\dev
 nmap <silent> <leader>f :FufFileWithCurrentBufferDir<CR>
 nmap <silent> <leader>b :FufBuffer<CR>
 nmap <silent> <leader>t :FufTaggedFile<CR>
+
+" easy tabbing in visual mode
 vmap > >gv<CR>
 vmap < <gv<CR>
+
+" Coffee script autocmd when written, compiles file
+au BufWritePost *.coffee silent CoffeeMake! -b | cwindow
+
+" CoffeeScript -> path to compiler if not in PATH
+" let coffee_compiler = 'path/to/coffee'
