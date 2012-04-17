@@ -46,6 +46,10 @@ set noswapfile
 nmap <silent> <leader>, :NERDTreeToggle<CR>
 nmap <leader>l :set list!<CR>
 
+" Use the same symbols as TextMate for tabstops and EOLs
+set listchars=tab:?\ ,eol:¬
+
+
 " Edit/reload the vimrc file
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
@@ -72,3 +76,6 @@ au BufWritePost *.coffee silent CoffeeMake! -b | cwindow
 
 " CoffeeScript -> path to compiler if not in PATH
 " let coffee_compiler = 'path/to/coffee'
+
+" NERDTree
+let NERDTreeShowHidden=1
