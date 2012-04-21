@@ -1,0 +1,25 @@
+[user]
+	name = Joey Vano
+	email = joseph.vano@gmail.com
+[core]
+	autocrlf = false
+	editor = vim
+[diff]
+	external = c:/users/jvano/difftool.sh
+
+[merge]
+	keepBackup = false
+	tool = p4merge
+
+[mergetool "p4merge"]
+	cmd = "c:/Program Files/Perforce/p4merge.exe" "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+	keepTemporaries = false
+	trustExitCode = false
+	keepBackup = false
+[color]
+	ui = auto
+[github]
+	user = josephvano
+	token = 73f6f586aea223c4bc003463fcdbe792
+[http]
+	sslcainfo = c:/git/bin/curl-ca-bundle.crt
