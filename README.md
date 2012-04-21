@@ -7,11 +7,13 @@
 Navigate to your $HOME path and clone the repository
 
     git clone git@github.com:josephvano/dotfiles.git
+    cd dotfiles
     git submodule init
     git submodule update
 
 Go to your vim installation path, mine is _c:/vim_ and create symbolic links to vimfiles and .vimrc
 
+    cd c:/vim
     mklink /d vimfiles $HOME/dotfiles/vim/.vim
     mklink .vimrc $HOME/dotfiles/vim/.vimrc
 
