@@ -79,3 +79,5 @@ au BufWritePost *.coffee silent CoffeeMake! -b | cwindow
 
 " NERDTree
 let NERDTreeShowHidden=1
+
+inoremap kj <ESC>
