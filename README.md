@@ -16,6 +16,7 @@ Go to your vim installation path, mine is _c:/vim_ and create symbolic links to 
     cd c:/vim
     mklink /d vimfiles $HOME/dotfiles/vim/.vim
     mklink .vimrc $HOME/dotfiles/vim/.vimrc
+    mklink .gvimrc $HOME/dotfiles/vim/.gvimrc
 
 ### Plugin requirements
 
