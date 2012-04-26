@@ -81,3 +81,5 @@ au BufWritePost *.coffee silent CoffeeMake! -b | cwindow
 let NERDTreeShowHidden=1
 
 inoremap kj <ESC>
+
+autocmd BufRead,BufNewFile *.spark set filetype=html
