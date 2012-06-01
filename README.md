@@ -18,6 +18,14 @@ Go to your vim installation path, mine is _c:/vim_ and create symbolic links to 
     mklink .vimrc $HOME/dotfiles/vim/.vimrc
     mklink .gvimrc $HOME/dotfiles/vim/.gvimrc
 
+### Adding new plugin as submodule
+
+This assumes you are using pathogen
+
+    git submodule add git://[path] vim/.vim/bundle/[plugin]
+    git submodule init
+    git submodule update
+
 ### Plugin requirements
 
 #### Ack
