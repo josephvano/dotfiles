@@ -50,7 +50,7 @@ nmap <leader>l :set list!<CR>
 set listchars=tab:?\ ,eol:¬
 
 
-" Edit/reload the vimrc file
+" Edit/reload the oimrc file
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
@@ -63,7 +63,9 @@ nmap <silent> <leader>cd :lcd %:h<CR>
 
 cd c:\dev
 
-nmap <silent> <leader>f :FufFileWithCurrentBufferDir<CR>
+" FuzzyFinder command
+nmap <silent> <leader>ff :FufFile<CR>
+nmap <silent> <leader>fb :FufFileWithCurrentBufferDir<CR>
 nmap <silent> <leader>b :FufBuffer<CR>
 nmap <silent> <leader>t :FufTaggedFile<CR>
 
@@ -83,3 +85,7 @@ let NERDTreeShowHidden=1
 inoremap kj <ESC>
 
 autocmd BufRead,BufNewFile *.spark set filetype=html
+autocmd BufRead,BufNewFile *.cshtml set filetype=html
+
+" surround.vim workaround for s command
+autocmd VimEnter * xunmap s
