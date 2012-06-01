@@ -34,7 +34,7 @@ I had to specify the path of the snippets folder in the .vimrc folder explicitly
 
 If you set it up in your $HOME folder, it should work out of the box.
 
-let g:snippets_dir = "$HOME/dotfiles/vim/.vim/bundle/snipmate/snippets"
+    let g:snippets_dir = "$HOME/dotfiles/vim/.vim/bundle/snipmate/snippets"
 
 #### Ack
 
