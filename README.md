@@ -28,6 +28,14 @@ This assumes you are using pathogen
 
 ### Plugin requirements
 
+#### snipmate
+
+I had to specify the path of the snippets folder in the .vimrc folder explicitly.
+
+If you set it up in your $HOME folder, it should work out of the box.
+
+let g:snippets_dir = "$HOME/dotfiles/vim/.vim/bundle/snipmate/snippets"
+
 #### Ack
 
 I installed Perl on my machine and Ack

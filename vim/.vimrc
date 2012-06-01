@@ -1,3 +1,5 @@
+set nocompatible
+
 " plugins under ~/.vim/bundle
 " Pathogen first
 filetype off
@@ -9,7 +11,6 @@ filetype indent on
 filetype plugin indent on
 filetype plugin on
 
-set nocompatible
 set ignorecase
 
 set tabstop=2
@@ -89,3 +90,5 @@ autocmd BufRead,BufNewFile *.cshtml set filetype=html
 
 " surround.vim workaround for s command
 autocmd VimEnter * xunmap s
+
+let g:snippets_dir = "$HOME/dotfiles/vim/.vim/bundle/snipmate/snippets/"
