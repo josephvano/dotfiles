@@ -91,4 +91,4 @@ autocmd BufRead,BufNewFile *.cshtml set filetype=html
 " surround.vim workaround for s command
 autocmd VimEnter * xunmap s
 
-let g:snippets_dir = "$HOME/dotfiles/vim/.vim/bundle/snipmate/snippets/"
+let g:snippets_dir = "$HOME/dotfiles/vim/.vim/bundle/snipmate/snippets/, $HOME/dotfiles/vim/.vim/bundle/jasmine/snippets/"
