@@ -92,3 +92,10 @@ autocmd BufRead,BufNewFile *.cshtml set filetype=html
 autocmd VimEnter * xunmap s
 
 let g:snippets_dir = "$HOME/dotfiles/vim/.vim/bundle/snipmate/snippets/, $HOME/dotfiles/vim/.vim/bundle/jasmine/snippets/"
+
+" window management
+map <C-j> <C-W>j
+map <C-j> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+nnoremap <silent> <Leader><Space> :ZoomWin<CR>
