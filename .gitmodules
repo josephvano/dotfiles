@@ -40,3 +40,6 @@
 [submodule "vim/.vim/bundle/zoomwin"]
 	path = vim/.vim/bundle/zoomwin
 	url = git://github.com/vim-scripts/ZoomWin.git
+[submodule "vim/.vim/bundle/mru"]
+	path = vim/.vim/bundle/mru
+	url = git://github.com/vim-scripts/mru.vim.git

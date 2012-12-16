@@ -71,8 +71,8 @@ nmap <silent> <leader>b :FufBuffer<CR>
 nmap <silent> <leader>t :FufTaggedFile<CR>
 
 " easy tabbing in visual mode
-vmap > >gv<CR>
-vmap < <gv<CR>
+vmap > >gv
+vmap < <gv
 
 " Coffee script autocmd when written, compiles file
 au BufWritePost *.coffee silent CoffeeMake! -b | cwindow
@@ -89,7 +89,7 @@ autocmd BufRead,BufNewFile *.spark set filetype=html
 autocmd BufRead,BufNewFile *.cshtml set filetype=html
 
 " surround.vim workaround for s command
-autocmd VimEnter * xunmap s
+" autocmd VimEnter * xunmap s
 
 let g:snippets_dir = "$HOME/dotfiles/vim/.vim/bundle/snipmate/snippets/, $HOME/dotfiles/vim/.vim/bundle/jasmine/snippets/"
 
