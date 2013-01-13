@@ -44,7 +44,10 @@ set autoread
 set nobackup
 set noswapfile
 
-nmap <silent> <leader>, :NERDTreeToggle<CR>
+" NERDTree / no longer installed
+" let NERDTreeShowHidden=1
+" nmap <silent> <leader>, :NERDTreeToggle<CR>
+"
 nmap <leader>l :set list!<CR>
 
 " Use the same symbols as TextMate for tabstops and EOLs
@@ -79,9 +82,6 @@ au BufWritePost *.coffee silent CoffeeMake! -b | cwindow
 
 " CoffeeScript -> path to compiler if not in PATH
 " let coffee_compiler = 'path/to/coffee'
-
-" NERDTree
-let NERDTreeShowHidden=1
 
 inoremap kj <ESC>
 
