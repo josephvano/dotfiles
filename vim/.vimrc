@@ -99,3 +99,10 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 nnoremap <silent> <Leader><Space> :ZoomWin<CR>
+
+nmap <F8> :TagbarToggle<CR>
+
+let g:tagbar_type_javascript = {
+    \ "ctagsbin" : "jsctags.bat"
+\ }
+
