@@ -52,3 +52,6 @@
 [submodule "vim/.vim/bundle/syntastic"]
 	path = vim/.vim/bundle/syntastic
 	url = git://github.com/scrooloose/syntastic.git
+[submodule "vim/.vim/plugin/matchit"]
+	path = vim/.vim/plugin/matchit
+	url = git://github.com/benjifisher/matchit.zip.git

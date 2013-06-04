@@ -78,7 +78,7 @@ vmap > >gv
 vmap < <gv
 
 " Coffee script autocmd when written, compiles file
-au BufWritePost *.coffee silent CoffeeMake! -b | cwindow
+" au BufWritePost *.coffee silent CoffeeMake! -b | cwindow
 
 " CoffeeScript -> path to compiler if not in PATH
 " let coffee_compiler = 'path/to/coffee'
