@@ -106,3 +106,4 @@ let g:tagbar_type_javascript = {
     \ "ctagsbin" : "jsctags.bat"
 \ }
 
+autocmd BufNewFile,BufRead *.shade set filetype=jade
