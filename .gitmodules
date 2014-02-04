@@ -55,3 +55,6 @@
 [submodule "vim/.vim/bundle/matchit"]
 	path = vim/.vim/bundle/matchit
 	url = git://github.com/benjifisher/matchit.zip.git
+[submodule "vim/.vim/bundle/vim-unimpaired"]
+	path = vim/.vim/bundle/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git
