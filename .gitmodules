@@ -67,3 +67,9 @@
 [submodule "vim/.vim/bundle/vim-shell"]
 	path = vim/.vim/bundle/vim-shell
 	url = git@github.com:xolox/vim-misc.git
+[submodule "vim/.vim/bundle/scratch"]
+	path = vim/.vim/bundle/scratch
+	url = https://github.com/mtth/scratch.vim.git
+[submodule "vim/.vim/bundle/vim-markdown"]
+	path = vim/.vim/bundle/vim-markdown
+	url = https://github.com/tpope/vim-markdown.git
