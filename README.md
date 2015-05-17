@@ -81,8 +81,6 @@ let g:OmniSharp_selector_ui = 'unite'  " Use unite.vim
 let g:OmniSharp_selector_ui = 'ctrlp'  " Use ctrlp.vim
 ```
 
-#### instant markdown
-
 #### snipmate
 
 I had to specify the path of the snippets folder in the .vimrc folder explicitly.
