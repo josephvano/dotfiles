@@ -2,6 +2,16 @@
 
 ## Vim
 
+###Install Python
+Install last version of 2.7 series ([Python 2.7.8] (http://www.python.org/download/releases/2.7.8/) at the time of this writing). Make sure that you pick correct version of Python to match the architecture of Vim.
+For example, if you installed Vim using the default Windows installer, you will need to install the x86 (32 bit!) version of Python.
+
+Verify that Python is working inside Vim with
+
+```vim
+:echo has('python')
+
+
 ### Windows Setup
 
 Navigate to your $HOME path and clone the repository
@@ -27,6 +37,36 @@ This assumes you are using pathogen
     git submodule update
 
 ### Plugin requirements
+
+#### omnisharp
+
+[pathogen.vim](https://github.com/tpope/vim-pathogen) is the recommended way to install OmniSharp.
+
+#####OSX / Linux
+Requires a minimum of Mono 3.0.12 - If you absolutely must use mono 2.10 then checkout the mono-2.10.8 tag. [Updating mono on ubuntu](https://github.com/nosami/OmniSharpServer/wiki)
+```sh
+cd ~/.vim/bundle
+git clone https://github.com/OmniSharp/omnisharp-vim.git
+cd omnisharp-vim
+git submodule update --init --recursive
+cd server
+xbuild
+```
+
+Note that if you have Mono installed outside of the ["standard" paths](https://github.com/OmniSharp/omnisharp-server/blob/master/OmniSharp/Solution/AssemblySearch.cs#L35-L52) (for example, if it is installed via Boxen where your homebrew root is not `/usr/local/`, you'll need to either add the path to the `AssemblySearch.cs` before building, or symlink your installation to one of the standard paths.
+
+#####Windows
+```dosbatch
+c:\
+cd c:\Users\username\vimfiles\bundle
+git clone https://github.com/OmniSharp/omnisharp-vim.git
+cd Omnisharp
+git submodule update --init --recursive
+cd server
+msbuild
+```
+
+#### instant markdown
 
 #### snipmate
 
