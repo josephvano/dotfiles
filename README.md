@@ -10,7 +10,7 @@ Verify that Python is working inside Vim with
 
 ```vim
 :echo has('python')
-
+```
 
 ### Windows Setup
 
@@ -40,7 +40,16 @@ This assumes you are using pathogen
 
 #### omnisharp
 
-[pathogen.vim](https://github.com/tpope/vim-pathogen) is the recommended way to install OmniSharp.
+#####Windows
+```dosbatch
+c:\
+cd c:\Users\username\vimfiles\bundle
+git clone https://github.com/OmniSharp/omnisharp-vim.git
+cd Omnisharp
+git submodule update --init --recursive
+cd server
+msbuild
+```
 
 #####OSX / Linux
 Requires a minimum of Mono 3.0.12 - If you absolutely must use mono 2.10 then checkout the mono-2.10.8 tag. [Updating mono on ubuntu](https://github.com/nosami/OmniSharpServer/wiki)
@@ -55,15 +64,21 @@ xbuild
 
 Note that if you have Mono installed outside of the ["standard" paths](https://github.com/OmniSharp/omnisharp-server/blob/master/OmniSharp/Solution/AssemblySearch.cs#L35-L52) (for example, if it is installed via Boxen where your homebrew root is not `/usr/local/`, you'll need to either add the path to the `AssemblySearch.cs` before building, or symlink your installation to one of the standard paths.
 
-#####Windows
-```dosbatch
-c:\
-cd c:\Users\username\vimfiles\bundle
-git clone https://github.com/OmniSharp/omnisharp-vim.git
-cd Omnisharp
-git submodule update --init --recursive
-cd server
-msbuild
+######(optional) Install vim-dispatch
+The vim plugin [vim-dispatch] (https://github.com/tpope/vim-dispatch) is needed to make Omnisharp start the server automatically and for running asynchronous builds.
+Use your favourite way to install it.
+
+######(optional) Install syntastic
+The vim plugin [syntastic] (https://github.com/scrooloose/syntastic) is needed for displaying code issues and syntax errors.
+Use your favourite way to install it.
+
+######(optional) Install ctrlp.vim or unite.vim
+[CtrlP](https://github.com/ctrlpvim/ctrlp.vim) or [unite.vim](https://github.com/Shougo/unite.vim) is needed if you want to use the Code Actions, Find Type and Find Symbol features.
+If you have installed both, you can choose one by `g:OmniSharp_selector_ui` variable.
+
+```vim
+let g:OmniSharp_selector_ui = 'unite'  " Use unite.vim
+let g:OmniSharp_selector_ui = 'ctrlp'  " Use ctrlp.vim
 ```
 
 #### instant markdown
