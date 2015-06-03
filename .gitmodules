@@ -82,3 +82,9 @@
 [submodule "vim/.vim/bundle/omnisharp-vim"]
 	path = vim/.vim/bundle/omnisharp-vim
 	url = https://github.com/OmniSharp/omnisharp-vim.git
+[submodule "vim/.vim/bundle/unite"]
+	path = vim/.vim/bundle/unite
+	url = https://github.com/Shougo/unite.vim.git
+[submodule "vim/.vim/bundle/robotframework-vim"]
+	path = vim/.vim/bundle/robotframework-vim
+	url = https://github.com/mfukar/robotframework-vim.git
