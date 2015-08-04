@@ -90,6 +90,12 @@ alias vim="mvim -v"
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias cl="clear"
+alias ll='ls -hl'
+alias l.='ls -dhl .*'
+alias so='source'
+
+export HISTCONTROL=ignoredups
+export HISTSIZE=1000
 
 # Antigen bundles
 antigen bundle git
