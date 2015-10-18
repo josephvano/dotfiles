@@ -105,3 +105,5 @@ let g:tagbar_type_javascript = {
 \ }
 
 autocmd BufNewFile,BufRead *.shade set filetype=jade
+
+set t_Co=256
