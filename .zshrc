@@ -105,6 +105,6 @@ antigen bundle pip
 
 # Antigen stuff
 antigen bundle zsh-users/zsh-syntax-highlighting
-# antigen-theme ys
-antigen-theme agnoster
+antigen-theme ys
+#antigen-theme agnoster
 antigen-apply
