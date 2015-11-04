@@ -13,10 +13,10 @@ filetype plugin on
 
 set ignorecase
 
-set tabstop=2
-set softtabstop=2
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 set smarttab
-set shiftwidth=2
 set autoindent
 set expandtab
 
@@ -65,7 +65,8 @@ nmap <silent> <leader>wa :1,9000bwipeout<CR>
 " cd to the directory containing the file
 nmap <silent> <leader>cd :lcd %:h<CR>
 
-cd c:\dev
+" start path when vim opens
+cd c:\dev\orbit\orbit\dev\orbit
 
 " FuzzyFinder command
 nmap <silent> <leader>ff :FufFile<CR>
