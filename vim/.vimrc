@@ -65,8 +65,7 @@ nmap <silent> <leader>wa :1,9000bwipeout<CR>
 " cd to the directory containing the file
 nmap <silent> <leader>cd :lcd %:h<CR>
 
-" start path when vim opens
-cd c:\dev\orbit\orbit\dev\orbit
+cd c:\dev
 
 " FuzzyFinder command
 nmap <silent> <leader>ff :FufFile<CR>
@@ -108,3 +107,5 @@ let g:tagbar_type_javascript = {
 \ }
 
 autocmd BufNewFile,BufRead *.shade set filetype=jade
+
+set t_Co=256
