@@ -3,7 +3,7 @@ set nocompatible
 " plugins under ~/.vim/bundle
 " Pathogen first
 filetype off
-call pathogen#runtime_append_all_bundles()
+execute pathogen#infect()
 call pathogen#helptags()
 
 filetype on
