@@ -85,6 +85,7 @@ inoremap kj <ESC>
 
 autocmd BufRead,BufNewFile *.spark set filetype=html
 autocmd BufRead,BufNewFile *.cshtml set filetype=html
+au Bufread,BufNewFile *.es6 setf javascript
 
 " surround.vim workaround for s command
 " autocmd VimEnter * xunmap s
