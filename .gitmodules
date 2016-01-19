@@ -100,3 +100,6 @@
 [submodule "vim/.vim/bundle/vim-stylus"]
 	path = vim/.vim/bundle/vim-stylus
 	url = https://github.com/wavded/vim-stylus.git
+[submodule "vim/.vim/bundle/typescript-vim"]
+	path = vim/.vim/bundle/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git
