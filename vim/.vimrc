@@ -113,3 +113,5 @@ set t_Co=256
 " ignore typescript filetypes for syntax checking, too long to check
 let g:syntastic_ignore_files = ['.*\.ts']
 
+" Toggles number or relativenumber 
+nnoremap <silent><leader>n :set rnu! rnu? <cr>
