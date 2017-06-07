@@ -106,6 +106,6 @@
 [submodule "vim/.vim/bundle/tern_for_vim"]
 	path = vim/.vim/bundle/tern_for_vim
 	url = https://github.com/ternjs/tern_for_vim.git
-[submodule "vim/.vim/bundle/junegunn/vim-easy-align"]
-	path = vim/.vim/bundle/junegunn/vim-easy-align
-	url = https://github.com/junegunn/vim-easy-align.git
+[submodule "vim/.vim/bundle/vim-easy-align"]
+	path = vim/.vim/bundle/vim-easy-align
+	url = git://github.com/junegunn/vim-easy-align

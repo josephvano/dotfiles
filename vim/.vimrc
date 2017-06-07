@@ -54,7 +54,7 @@ nmap <leader>l :set list!<CR>
 set listchars=tab:?\ ,eol:¬
 
 
-" Edit/reload the oimrc file
+" Edit/reload the vimrc (source)  file
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
@@ -115,3 +115,9 @@ let g:syntastic_ignore_files = ['.*\.ts']
 
 " Toggles number or relativenumber 
 nnoremap <silent><leader>n :set rnu! rnu? <cr>
+
+" Start interactive EasyAlign in visual mode (e.g. viga)
+xmap ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
