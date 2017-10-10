@@ -17,7 +17,6 @@ set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 set smarttab
-set autoindent
 set expandtab
 
 let mapleader= ","
@@ -121,3 +120,8 @@ xmap ga <Plug>(EasyAlign)
 
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
+
+" vim-js-pretty-template
+" applies syntax highlighting to template strings for typescript files
+autocmd FileType typescript JsPreTmpl html
+autocmd FileType typescript syn clear foldBraces
