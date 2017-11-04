@@ -125,3 +125,7 @@ nmap ga <Plug>(EasyAlign)
 " applies syntax highlighting to template strings for typescript files
 autocmd FileType typescript JsPreTmpl html
 autocmd FileType typescript syn clear foldBraces
+
+" Exclude lookups
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,node_modules,app.bundle.js     " MacOSX/Linux
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|app.bundle.js'
