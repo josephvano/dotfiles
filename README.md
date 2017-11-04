@@ -2,7 +2,7 @@
 
 ## Vim
 
-###Install Python
+### Install Python
 Install last version of 2.7 series ([Python 2.7.8] (http://www.python.org/download/releases/2.7.8/) at the time of this writing). Make sure that you pick correct version of Python to match the architecture of Vim.
 For example, if you installed Vim using the default Windows installer, you will need to install the x86 (32 bit!) version of Python.
 
@@ -40,7 +40,7 @@ This assumes you are using pathogen
 
 #### omnisharp
 
-#####Windows
+##### Windows
 ```dosbatch
 c:\
 cd c:\Users\username\vimfiles\bundle
@@ -51,7 +51,7 @@ cd server
 msbuild
 ```
 
-#####OSX / Linux
+##### OSX / Linux
 Requires a minimum of Mono 3.0.12 - If you absolutely must use mono 2.10 then checkout the mono-2.10.8 tag. [Updating mono on ubuntu](https://github.com/nosami/OmniSharpServer/wiki)
 ```sh
 cd ~/.vim/bundle
@@ -64,15 +64,15 @@ xbuild
 
 Note that if you have Mono installed outside of the ["standard" paths](https://github.com/OmniSharp/omnisharp-server/blob/master/OmniSharp/Solution/AssemblySearch.cs#L35-L52) (for example, if it is installed via Boxen where your homebrew root is not `/usr/local/`, you'll need to either add the path to the `AssemblySearch.cs` before building, or symlink your installation to one of the standard paths.
 
-######(optional) Install vim-dispatch
+###### (optional) Install vim-dispatch
 The vim plugin [vim-dispatch] (https://github.com/tpope/vim-dispatch) is needed to make Omnisharp start the server automatically and for running asynchronous builds.
 Use your favourite way to install it.
 
-######(optional) Install syntastic
+###### (optional) Install syntastic
 The vim plugin [syntastic] (https://github.com/scrooloose/syntastic) is needed for displaying code issues and syntax errors.
 Use your favourite way to install it.
 
-######(optional) Install ctrlp.vim or unite.vim
+###### (optional) Install ctrlp.vim or unite.vim
 [CtrlP](https://github.com/ctrlpvim/ctrlp.vim) or [unite.vim](https://github.com/Shougo/unite.vim) is needed if you want to use the Code Actions, Find Type and Find Symbol features.
 If you have installed both, you can choose one by `g:OmniSharp_selector_ui` variable.
 
@@ -113,3 +113,12 @@ Another caveat is I have python 2.5 on my machine. I tried it with Python 3.x an
 2. Rename your **vimfiles** to **.vim**
 
 Modern windows vim installation understands .vimrc vs _vimrc
+
+## Typescript IDE like environment
+
+### tsuquyomi
+https://github.com/Quramy/tsuquyomi
+
+```bash
+npm install -g typescript
+```
