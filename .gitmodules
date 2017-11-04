@@ -112,3 +112,9 @@
 [submodule "vim/.vim/bundle/vim-js-pretty-template"]
 	path = vim/.vim/bundle/vim-js-pretty-template
 	url = https://github.com/Quramy/vim-js-pretty-template.git
+[submodule "vim/.vim/bundle/vimproc.vim"]
+	path = vim/.vim/bundle/vimproc.vim
+	url = https://github.com/Shougo/vimproc.vim.git
+[submodule "vim/.vim/bundle/tsuquyomi"]
+	path = vim/.vim/bundle/tsuquyomi
+	url = https://github.com/Quramy/tsuquyomi.git
