@@ -1,4 +1,8 @@
 # Antigen
+
+# add ANTIGEN_MUTEX=false to avoid process is already running
+# see https://github.com/zsh-users/antigen/issues/543
+ANTIGEN_MUTEX=false
 source "$HOME/.antigen/antigen.zsh"
 
 # Load the oh-my-zsh's library
@@ -56,8 +60,9 @@ ENABLE_CORRECTION="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-git,
-kubectl
+  git,
+  kubectl,
+  osx
 )
 
 # User configuration
@@ -91,7 +96,6 @@ export EDITOR='vim'
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias vim="mvim -v"
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias cl="clear"
@@ -103,13 +107,23 @@ export HISTCONTROL=ignoredups
 export HISTSIZE=1000
 
 # Antigen bundles
-antigen bundle git
+source ~/.antigen/antigen.zsh
+
+#antigen bundle git
 antigen bundle heroku
 antigen bundle npm
 antigen bundle pip
+antigen bundle brew
+#antigen bundle github
 
 # Antigen stuff
 antigen bundle zsh-users/zsh-syntax-highlighting
-antigen-theme ys
-#antigen-theme agnoster
-antigen-apply
+antigen bundle zsh-users/zsh-autosuggestions
+antigen theme ys
+#antigen theme agnoster
+antigen apply
+
+# zsh-completions
+fpath=(/usr/local/share/zsh-completions $fpath)
+source ~/.antigen/bundles/zsh-users/zsh-autosuggestions/zsh-autosuggestions.zsh
+
