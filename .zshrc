@@ -110,7 +110,7 @@ export HISTSIZE=1000
 source ~/.antigen/antigen.zsh
 
 #antigen bundle git
-antigen bundle heroku
+#antigen bundle heroku
 antigen bundle npm
 antigen bundle pip
 antigen bundle brew
