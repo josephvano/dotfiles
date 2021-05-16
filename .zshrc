@@ -1,3 +1,5 @@
+ZSH_DISABLE_COMPFIX=true
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # Antigen
 
 # add ANTIGEN_MUTEX=false to avoid process is already running
@@ -67,7 +69,6 @@ plugins=(
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -126,4 +127,3 @@ antigen apply
 # zsh-completions
 fpath=(/usr/local/share/zsh-completions $fpath)
 source ~/.antigen/bundles/zsh-users/zsh-autosuggestions/zsh-autosuggestions.zsh
-
