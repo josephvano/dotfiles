@@ -120,8 +120,9 @@ antigen bundle brew
 # Antigen stuff
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
-antigen theme ys
+#antigen theme ys
 #antigen theme agnoster
+antigen theme https://github.com/denysdovhan/spaceship-zsh-theme spaceship
 antigen apply
 
 # zsh-completions
