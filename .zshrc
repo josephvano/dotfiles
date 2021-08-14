@@ -128,3 +128,7 @@ antigen apply
 # zsh-completions
 fpath=(/usr/local/share/zsh-completions $fpath)
 source ~/.antigen/bundles/zsh-users/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Go env vars
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
