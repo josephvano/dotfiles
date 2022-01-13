@@ -64,7 +64,7 @@ ENABLE_CORRECTION="true"
 plugins=(
   git
   kubectl
-  osx
+  macos
 )
 
 # User configuration
