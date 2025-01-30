@@ -52,9 +52,6 @@
 [submodule "vim/.vim/bundle/vim-unimpaired"]
 	path = vim/.vim/bundle/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
-[submodule "vim/.vim/bundle/mustache"]
-	path = vim/.vim/bundle/mustache
-	url = git://github.com/mustache/vim-mustache-handlebars.git
 [submodule "vim/.vim/bundle/vim-misc"]
 	path = vim/.vim/bundle/vim-misc
 	url = git@github.com:xolox/vim-misc.git
