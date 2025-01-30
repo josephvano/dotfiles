@@ -37,9 +37,6 @@
 [submodule "vim/.vim/bundle/mru"]
 	path = vim/.vim/bundle/mru
 	url = git://github.com/vim-scripts/mru.vim.git
-[submodule "vim/.vim/bundle/vim-jade"]
-	path = vim/.vim/bundle/vim-jade
-	url = git://github.com/digitaltoad/vim-jade.git
 [submodule "vim/.vim/bundle/tagbar"]
 	path = vim/.vim/bundle/tagbar
 	url = git://github.com/majutsushi/tagbar.git
