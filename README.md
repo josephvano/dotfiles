@@ -1,8 +1,41 @@
 # dotfiles
 
+## tmux
+
+Create a symlink to `.tmux.conf`
+
+```
+ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
+```
+
 ## Vim
 
+> NOTE: need to use the built-in packages vim functionality
+
+* install [pathogen](https://github.com/tpope/vim-pathogen)
+* source configuration
+* add color scheme
+
+Modify current `.vimrc`
+
+```
+source ~/dotfiles/vim/.vimrc
+```
+
+## Zshrc
+
+Modify current `.zshrc`
+
+
+```
+source ~/dotfiles/.zshrc
+```
+
+Install [antigen](https://github.com/zsh-users/antigen) manage zshrc plugins
+
+
 ### Install Python
+
 Install last version of 2.7 series ([Python 2.7.8] (http://www.python.org/download/releases/2.7.8/) at the time of this writing). Make sure that you pick correct version of Python to match the architecture of Vim.
 For example, if you installed Vim using the default Windows installer, you will need to install the x86 (32 bit!) version of Python.
 
