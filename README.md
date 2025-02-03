@@ -10,6 +10,12 @@ ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 
 ## Vim
 
+Create a symlink to `.vim` folder to load plugins and color scheme
+
+```
+ln -s ~/dotfiles/.vim ~/.vim
+```
+
 > NOTE: need to use the built-in packages vim functionality
 
 * install [pathogen](https://github.com/tpope/vim-pathogen)
